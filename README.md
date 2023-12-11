@@ -1,4 +1,5 @@
 # PkmnCalcWinForms
+![Working app image](https://i.imgur.com/Q0Gb2kP.png)  
 Simple winforms app created as a way to learn winforms. This app shows damage multipliers that affect defending pokemon.
 It uses the same library as PkmnCalcWPF.    
 After selecting types and hitting the `Show damage taken` button it displays every possible attacking pokemon type and
