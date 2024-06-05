@@ -19,11 +19,11 @@ namespace PkmnCalcWinFormsUI
     public partial class PokemonTypeCalculatorForm : Form
     {
         // collections used by pokemon defending type comboboxes
-        private ObservableCollection<IPkmnType> PrimaryPkmnTypeList { get; set; } = PkmnTypeFactory.GeneratePkmnTypeList();
-        private ObservableCollection<IPkmnType> SecondaryPkmnTypeList { get; set; } = PkmnTypeFactory.GeneratePkmnTypeList();
+        private ObservableCollection<IPkmnType> PrimaryPkmnTypeList { get; set; } = new ObservableCollection<IPkmnType>(PkmnTypeFactory.GeneratePkmnTypeList());
+        private ObservableCollection<IPkmnType> SecondaryPkmnTypeList { get; set; } = new ObservableCollection<IPkmnType>(PkmnTypeFactory.GeneratePkmnTypeList());
 
         // collection used by objectlistview
-        private ObservableCollection<IPkmnType> PkmnTypeList { get; set; } = PkmnTypeFactory.GeneratePkmnTypeList();
+        private ObservableCollection<IPkmnType> PkmnTypeList { get; set; } = new ObservableCollection<IPkmnType>(PkmnTypeFactory.GeneratePkmnTypeList());
 
         // properties used for storing the deleted PkmnType from comboboxes
         public IPkmnType DeletedTypeFromPrimaryCombobox { get; set; }
